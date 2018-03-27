@@ -1,0 +1,67 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    app:cardUseCompatPadding="true"
+    card_view:cardElevation="0dp"
+   card_view:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:padding="3dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewer_name"
+
+        android:text="Angela Pang:"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginRight="15dp"
+        />
+    <android.widget.RatingBar
+        android:id="@+id/myRatingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+
+
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginRight="15dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="2.5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_msg"
+        android:layout_below="@+id/myRatingBar"
+        android:text="Ray is true professional-- on time, polished, prepared, helpful and extremely easy to work with. We hosted a retro theme cocktail party for 40 guests this spring ray was our bartender, everyone was very impressed."
+        android:background="@drawable/rounded_edit"
+
+
+        android:layout_marginTop="25dp"
+
+
+
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        />
+
+
+
+</android.support.v7.widget.CardView>
